@@ -1,4 +1,4 @@
-# 🐍Problema 2
+# 🐍Problema 3
 
 Implementacion de un juego de cartas “Guerra” (es un juego de azar donde el objetivo es ganar todas las cartas).
 
@@ -8,6 +8,7 @@ Implementacion de un juego de cartas “Guerra” (es un juego de azar donde el 
 La implementacion del codigo se encuentra en [modules](./modules) del proyecto.
 
 Los test del codigo se encuentran en [tests](./tests) del proyecto.
+
 ---
 ## 📑Dependencias
 
