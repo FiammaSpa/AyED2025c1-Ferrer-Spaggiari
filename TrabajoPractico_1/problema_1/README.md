@@ -1,25 +1,20 @@
-# 🐍Nombre del proyecto (darle un nombre significativo) 
+# 🐍Problema 1
 
-Breve descripción del proyecto:
-
-Ejemplo: “Este es un script en el que se comparan algoritmos de ordenamiento. Permite [describir funcionalidades principales].
+Implementacion de 3 algoritmos de ordenamiento (ordenamiento burbuja, ordenamiento quicksort y ordenamiento por residuos) con el estudio de su tiempo de ejecucion de forma grafica.
 
 ---
 ## 🏗Arquitectura General
 
-Explica brevemente cómo está organizado el código (funciones y/o clases)
 
-Las gráficas de los resultados están disponible en la carpeta [data](./data) del proyecto.
+Tanto la implementacion de cada ordenamiento como sus gráficas con la comparacion de lols tiempos de ejecucion se encuentran en la carpeta [modules](./modules) del proyecto.
 
-El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
 
 ---
 ## 📑Dependencias
 
 1. **Python 3.x**
 2. **matplotlib** (`pip install matplotlib`)
-3. listar dependencias principales
-4. Dependencias listadas en requierements.txt
+
 
 ---
 ## 🚀Cómo Ejecutar el Proyecto
@@ -36,9 +31,8 @@ El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
 ---
 ## 🙎‍♀️🙎‍♂️Autores
 
-- Apellido y Nombre del primer integrante
-- Apellido y Nombre del primer integrante
+- Spaggiari Fiamma
+- Ferrer Paira Iñaki
 
 ---
 
-> **Consejo**: Mantén el README **actualizado** conforme evoluciona el proyecto, y elimina (o añade) secciones según necesites. Esta plantilla es sólo un punto de partida general.
