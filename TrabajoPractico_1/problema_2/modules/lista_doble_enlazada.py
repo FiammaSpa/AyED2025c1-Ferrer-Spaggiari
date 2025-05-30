@@ -2,9 +2,34 @@ from nodo import Nodo
 
 class ListaDobleEnlazada:
     def __init__(self):
-        self.cabeza = None
-        self.cola = None
-        self.tamanio = 0
+        self.__cabeza = None
+        self.__cola = None
+        self.__tamanio = 0
+    @property
+    def cabeza(self):
+        return self.__cabeza
+
+    @cabeza.setter
+    def cabeza(self, nodo):
+        self.__cabeza = nodo
+
+    @property
+    def cola(self):
+        return self.__cola
+
+    @cola.setter
+    def cola(self, nodo):
+        self.__cola = nodo
+
+    @property
+    def tamanio(self):
+        return self.__tamanio
+
+    @tamanio.setter
+    def tamanio(self, valor):
+        if valor < 0:
+            raise ValueError("El tamaño no puede ser negativo.")
+        self.__tamanio = valor
 
     def esta_vacia(self):
         return self.tamanio == 0

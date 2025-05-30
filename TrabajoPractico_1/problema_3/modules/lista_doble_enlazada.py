@@ -1,10 +1,35 @@
-from modules.nodo import Nodo
+from nodo import Nodo
 
 class ListaDobleEnlazada:
     def __init__(self):
-        self.cabeza = None
-        self.cola = None
-        self.tamanio = 0
+        self.__cabeza = None
+        self.__cola = None
+        self.__tamanio = 0
+    @property
+    def cabeza(self):
+        return self.__cabeza
+
+    @cabeza.setter
+    def cabeza(self, nodo):
+        self.__cabeza = nodo
+
+    @property
+    def cola(self):
+        return self.__cola
+
+    @cola.setter
+    def cola(self, nodo):
+        self.__cola = nodo
+
+    @property
+    def tamanio(self):
+        return self.__tamanio
+
+    @tamanio.setter
+    def tamanio(self, valor):
+        if valor < 0:
+            raise ValueError("El tamaño no puede ser negativo.")
+        self.__tamanio = valor
 
     def esta_vacia(self):
         return self.tamanio == 0
@@ -50,7 +75,9 @@ class ListaDobleEnlazada:
             actual.anterior = nuevo_nodo
             self.tamanio += 1
 
-    def extraer(self, posicion):
+    def extraer(self, posicion=None):
+        if posicion is None or posicion == -1:
+            posicion = self.tamanio - 1
         if self.esta_vacia():
             raise Exception("La lista está vacía")
         if posicion < 0 or posicion >= self.tamanio:
@@ -97,20 +124,29 @@ class ListaDobleEnlazada:
         self.cabeza, self.cola = self.cola, self.cabeza
 
     def concatenar(self, otra_lista):
-        if otra_lista.esta_vacia():
+        otra = otra_lista.copiar()  
+        if otra.esta_vacia():
             return
         if self.esta_vacia():
-            self.cabeza = otra_lista.cabeza
-            self.cola = otra_lista.cola
+            self.cabeza = otra.cabeza
+            self.cola = otra.cola
         else:
-            self.cola.siguiente = otra_lista.cabeza
-            otra_lista.cabeza.anterior = self.cola
-            self.cola = otra_lista.cola
-        self.tamanio += len(otra_lista)
-    
+            self.cola.siguiente = otra.cabeza
+            otra.cabeza.anterior = self.cola
+            self.cola = otra.cola
+            self.tamanio += len(otra)
+        if self.cabeza:
+            self.cabeza.anterior = None
+
     def __add__(self, otra_lista):
         if not isinstance(otra_lista, ListaDobleEnlazada):
             raise TypeError("Solo se puede sumar con otra ListaDobleEnlazada")
         nueva = self.copiar()
         nueva.concatenar(otra_lista.copiar())
         return nueva
+
+    def __iter__(self): 
+        actual = self.cabeza
+        while actual:
+            yield actual.dato
+            actual = actual.siguiente
