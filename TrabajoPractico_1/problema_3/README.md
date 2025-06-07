@@ -1,17 +1,13 @@
-# 🐍Nombre del proyecto (darle un nombre significativo) 
+# 🐍Problema 3
 
-Breve descripción del proyecto:
-
-Ejemplo: “Este es un script en el que se comparan algoritmos de ordenamiento. Permite [describir funcionalidades principales].
+Implementacion de un juego de cartas “Guerra” (es un juego de azar donde el objetivo es ganar todas las cartas).
 
 ---
 ## 🏗Arquitectura General
 
-Explica brevemente cómo está organizado el código (funciones y/o clases)
+La implementacion del codigo se encuentra en [modules](./modules) del proyecto.
 
-Las gráficas de los resultados están disponible en la carpeta [data](./data) del proyecto.
-
-El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
+Los test del codigo se encuentran en [tests](./tests) del proyecto.
 
 ---
 ## 📑Dependencias
@@ -36,9 +32,8 @@ El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
 ---
 ## 🙎‍♀️🙎‍♂️Autores
 
-- Apellido y Nombre del primer integrante
-- Apellido y Nombre del primer integrante
+- Spaggiari Fiamma
+-Ferrer Paira Iñaki
 
 ---
 
-> **Consejo**: Mantén el README **actualizado** conforme evoluciona el proyecto, y elimina (o añade) secciones según necesites. Esta plantilla es sólo un punto de partida general.

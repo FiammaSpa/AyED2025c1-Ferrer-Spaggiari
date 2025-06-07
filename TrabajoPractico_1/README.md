@@ -1,17 +1,12 @@
-# 🐍Nombre del proyecto (darle un nombre significativo) 
-
-Breve descripción del proyecto:
-
-Ejemplo: “Este es un script en el que se comparan algoritmos de ordenamiento. Permite [describir funcionalidades principales].
+# 🐍TRABAJO PRACTICO 1
 
 ---
 ## 🏗Arquitectura General
 
-Explica brevemente cómo está organizado el código (funciones y/o clases)
+El TP1 está organizado en 3 carpetas donde se encuentra la resolución de cada uno de los problemas planteados. 
 
-Las gráficas de los resultados están disponible en la carpeta [data](./data) del proyecto.
-
-El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
+En la carpeta [modules](./modules) está la implementación de lo requerido por cada problema 
+En la carpeta [test](./test) están los test implementados para verificar que nuestro código esté cumpliendo con lo requerido y tengan ciertos cuidados a lo hora de trabajar con los datos brindados.
 
 ---
 ## 📑Dependencias
@@ -36,9 +31,7 @@ El informe completo está disponible en la carpeta [docs](./docs) del proyecto.
 ---
 ## 🙎‍♀️🙎‍♂️Autores
 
-- Apellido y Nombre del primer integrante
-- Apellido y Nombre del primer integrante
+- Spaggiari Fiamma
+- Ferrer Paira Iñaki
 
 ---
-
-> **Consejo**: Mantén el README **actualizado** conforme evoluciona el proyecto, y elimina (o añade) secciones según necesites. Esta plantilla es sólo un punto de partida general.
