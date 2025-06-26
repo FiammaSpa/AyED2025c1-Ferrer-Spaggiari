@@ -13,7 +13,6 @@ El informe completo esta en formato PDF.
 ## 📑Dependencias
 
 1.  **Python 3.x**
-2.  **heapq** (Módulo estándar de Python, no requiere instalación adicional).
 3.  **os** (Módulo estándar de Python, no requiere instalación adicional).
 
 ---
