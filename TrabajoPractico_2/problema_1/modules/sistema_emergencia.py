@@ -1,4 +1,4 @@
-from modules.cola_prioridad import ColaPrioridad
+from cola_prioridad import ColaPrioridad
 
 class ColaEmergencias:
     """
@@ -25,4 +25,4 @@ class ColaEmergencias:
         """
         Retorna una lista de todos los pacientes que actualmente se encuentran en la cola de espera.
         """
-        return self.cola.elementos()
+        return self.cola.obtener_elementos()

@@ -1,6 +1,7 @@
 class ColaPrioridad:
     """
     Implementa una cola de prioridad utilizando un montículo binario (min-heap) implementado manualmente.
+    
     """
     def __init__(self, funcion_prioridad):
         self.elementos_en_cola = []
