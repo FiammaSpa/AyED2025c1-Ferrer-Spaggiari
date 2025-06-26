@@ -1,6 +1,6 @@
 # 🐍Problema 3 (Palomas mensajeras)
 
-Se implementa un sistema para encontrar la forma más eficiente de distribuir mensajes en una red de aldeas, utilizando palomas mensajeras. Permite cargar la red de aldeas desde un archivo, calcular las rutas más cortas y determinar la lógica de replicación para minimizar la distancia total recorrida.
+Se implementa un sistema para encontrar la forma más eficiente de distribuir mensajes en una red de aldeas, utilizando palomas mensajeras. Permite cargar la red de aldeas desde un archivo y determinar la lógica de replicación para minimizar la distancia total recorrida.
 
 ---
 ## 🏗Arquitectura General
