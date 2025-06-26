@@ -8,7 +8,7 @@ El código está organizado en clases y funciones dentro de módulos específico
 
 Problema 1 (Sala de emergencias): Contiene la implementacion de 3 clases (cola prioridad, paciente y sistema de emergencias) y un main donde se realizaron una serie de pruebas.
 Problema 2 (Temperaturas_DB): Contiene la implementacion de 3 clases (ArbolAVL, NodoAVL y temperaturas_db), un test de temperaturas db y un main en donde se hicieron una serie de pruebas antes del test.
-Problema 3 (Palomas Mensajeras): Implementa la clase PalomasMensajeras que construye un grafo a partir de datos de aldeas y distancias, y utiliza el algoritmo de Dijkstra para encontrar las rutas más eficientes y gestionar la replicación de mensajes.
+Problema 3 (Palomas Mensajeras): Implementa la clase PalomasMensajeras que construye un grafo a partir de datos de aldeas y distancias, y utiliza el algoritmo de Prim para encontrar las rutas más eficientes y gestionar la replicación de mensajes.
 
 El informe completo está disponible en formato PDF.
 
